@@ -1,0 +1,137 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.main {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin:2rem;
+}
+
+#name {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.input {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.input input[type="text"] {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.input button {
+  padding: 0.8rem 1.2rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input button:hover {
+  background-color: #45a049;
+}
+
+.display {
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.display h3 {
+  flex: 1;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.display input[type="checkbox"] {
+  transform: scale(1.4);
+}
+.completed{
+  text-decoration:line-through;
+}
+.display button {
+  padding: 0.5rem 1rem;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.display button:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 480px) {
+  .input, .display {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .input button,
+  .display button {
+    width: 100%;
+  }
+}
+.time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3f2fd;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1.5rem;
+  margin-top:1rem ;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.time h4 {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .time {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
